@@ -98,16 +98,23 @@ const tareasAsignadas = [
     alert("Sesión cerrada correctamente.");
     window.location.href = "login_maestro.html"; // O redirigí a index.html si preferís
   }
-  function iniciarSesionEstudiante() {
-    const correo = document.getElementById("correoEstudiante").value;
-    const contrasena = document.getElementById("contrasenaEstudiante").value;
-  
-    if (correo === "alumno@colegio.com" && contrasena === "4321") {
-      alert("Bienvenido, alumno 👨‍🎓");
-      window.location.href = "estudiante_dashboard.html";
-    } else {
-      alert("Correo o contraseña incorrectos");
-    }
-  
-    return false; // evita recarga del formulario
+  // Función de login del alumno
+function iniciarSesionEstudiante() {
+  const correo = document.getElementById("correoEstudiante").value;
+  const contrasena = document.getElementById("contrasenaEstudiante").value;
+
+  if (correo === "alumno@colegio.com" && contrasena === "4321") {
+    alert("Bienvenido, alumno 👨‍🎓");
+    window.location.href = "estudiante_dashboard.html";
+  } else {
+    alert("Correo o contraseña incorrectos");
   }
+
+  return false;
+}
+
+// Escuchamos el formulario
+document.getElementById("formEstudiante")?.addEventListener("submit", function (e) {
+  e.preventDefault();
+  iniciarSesionEstudiante();
+});
