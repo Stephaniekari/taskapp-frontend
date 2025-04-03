@@ -47,8 +47,10 @@ function ingresarComo(rol) {
     `;
     lista.appendChild(item);
   
-    // Limpiar formulario
-    document.getElementById("formTarea").reset();
+    
+    // Redirigir a pantalla de confirmación
+window.location.href = "tarea_asignada.html";
+
   });
   // Simulamos algunas tareas disponibles
 const tareasAsignadas = [
