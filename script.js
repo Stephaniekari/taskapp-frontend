@@ -92,4 +92,8 @@ const tareasAsignadas = [
     const enlace = document.getElementById(`enlace${i}`).value || "Sin enlace";
     alert(`✅ Tarea entregada:\nArchivo: ${archivo}\nEnlace: ${enlace}`);
   }
+  function cerrarSesion() {
+    alert("Sesión cerrada correctamente.");
+    window.location.href = "login_maestro.html"; // O redirigí a index.html si preferís
+  }
   
