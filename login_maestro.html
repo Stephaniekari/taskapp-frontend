@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iniciar sesión - Docente | TaskApp</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="assets/logo.png" alt="Logo Colegio" class="logo" />
+    <h1 class="titulo">TaskApp</h1>
+    <p>Inicio de sesión – Docente</p>
+
+    <form onsubmit="return iniciarSesionDocente()" class="formulario">
+      <input type="email" id="correoDocente" placeholder="Correo electrónico" required />
+      <input type="password" id="contrasenaDocente" placeholder="Contraseña" required />
+      <button type="submit">Iniciar sesión</button>
+    </form>
+
+    <p>
+      ¿Eres estudiante?
+      <a href="login_estudiante.html">Ingresar aquí</a>
+    </p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panel del Docente | TaskApp</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+   <img src="assets/logo.png" alt="Logo Colegio" class="logo" />
+    <h1 class="titulo">Panel del Docente</h1>
+
+    <form id="formTarea" class="formulario">
+      <input type="text" id="titulo" placeholder="Título de la tarea" required />
+      <input type="date" id="fecha" required />
+      <input type="time" id="hora" required />
+      <input type="file" id="archivo" />
+      <input type="url" id="enlace" placeholder="Agregar enlace (opcional)" />
+      <button type="submit">Agregar tarea</button>
+    </form>
+
+    <h3>Tareas creadas:</h3>
+    <ul id="listaTareas"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
